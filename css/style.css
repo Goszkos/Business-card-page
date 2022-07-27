@@ -1,893 +1,923 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
+	content: "";
+	display: block;
+	clear: both;
 }
 
 header {
-  position: relative;
-  background-color: #28a6dc;
-  height: 100vh;
-  overflow: hidden;
-  max-width: 1920px;
-  margin: 0 auto;
+	position: relative;
+	background-color: #28a6dc;
+	height: 100vh;
+	overflow: hidden;
+	max-width: 1920px;
+	margin: 0 auto;
 }
 
 header > * {
-  position: absolute;
+	position: absolute;
 }
 
 header img {
-  height: 85%;
-  right: 0;
-  bottom: -14%;
+	height: 85%;
+	right: 0;
+	bottom: -14%;
 }
 
 header div.welcome {
-  z-index: 1;
-  top: 7%;
-  left: 5%;
-  right: 5%;
-  font-family: 'Saira Condensed', sans-serif;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
+	z-index: 1;
+	top: 7%;
+	left: 5%;
+	right: 5%;
+	font-family: "Saira Condensed", sans-serif;
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 header h1 {
-  margin-top: 15px;
-  font-size: 20px;
+	margin-top: 15px;
+	font-size: 20px;
 }
 
 header h2 {
-  font-size: 20px;
-  font-weight: normal;
+	font-size: 20px;
+	font-weight: normal;
 }
 
 header button {
-  font-family: 'Saira', sans-serif;
-  font-weight: 300;
-  color: white;
-  line-height: 32px;
-  padding: 0 20px;
-  text-transform: uppercase;
-  color: white;
-  background-color: transparent;
-  font-size: 12px;
-  border: 2px solid white;
+	font-family: "Saira", sans-serif;
+	font-weight: 300;
+	color: white;
+	line-height: 32px;
+	padding: 0 20px;
+	text-transform: uppercase;
+	color: white;
+	background-color: transparent;
+	font-size: 12px;
+	border: 2px solid white;
 }
 
 @media (orientation: portrait) and (min-width: 360px) {
-  header h1 {
-    font-size: 24px;
-  }
+	header h1 {
+		font-size: 24px;
+	}
 
-  header h2 {
-    font-size: 24px;
-  }
+	header h2 {
+		font-size: 24px;
+	}
 
-  header button {
-    margin-top: 24px;
-    line-height: 40px;
-    font-size: 16px;
-  }
+	header button {
+		margin-top: 24px;
+		line-height: 40px;
+		font-size: 16px;
+	}
 }
 
 @media (orientation: portrait) and (min-width: 410px) {
-  header h1 {
-    font-size: 26px;
-  }
+	header h1 {
+		font-size: 26px;
+	}
 
-  header h2 {
-    font-size: 26px;
-  }
+	header h2 {
+		font-size: 26px;
+	}
 
-  header button {
-    margin-top: 40px;
-    line-height: 50px;
-    font-size: 20px;
-  }
+	header button {
+		margin-top: 40px;
+		line-height: 50px;
+		font-size: 20px;
+	}
 
-  header img {
-    right: -10%;
-  }
+	header img {
+		right: -10%;
+	}
 }
 
 @media (orientation: portrait) and (min-width: 768px) {
-  header p {
-    font-size: 80px;
-  }
+	header p {
+		font-size: 80px;
+	}
 
-  header h1 {
-    font-size: 32px;
-  }
+	header h1 {
+		font-size: 32px;
+	}
 
-  header h2 {
-    font-size: 32px;
-  }
+	header h2 {
+		font-size: 32px;
+	}
 
-  header button {
-    margin-top: 60px;
-    line-height: 60px;
-    font-size: 24px;
-  }
+	header button {
+		margin-top: 60px;
+		line-height: 60px;
+		font-size: 24px;
+	}
 
-  header img {
-    right: -5%;
-    bottom: -19%;
-  }
+	header img {
+		right: -5%;
+		bottom: -19%;
+	}
 }
 
-@media (orientation:landscape) {
-  header img {
-    height: 160%;
-    right: -5%;
-    bottom: -36%;
-  }
+@media (orientation: landscape) {
+	header img {
+		height: 160%;
+		right: -5%;
+		bottom: -36%;
+	}
 
-  header div.welcome {
-    top: 15%;
-    left: 7%;
-    right: 46%;
-  }
+	header div.welcome {
+		top: 15%;
+		left: 7%;
+		right: 46%;
+	}
 
-  header button {
-    margin-top: 40px;
-  }
-
+	header button {
+		margin-top: 40px;
+	}
 }
 
-@media (orientation:landscape) and (min-width: 640px) {
-  header h1 {
-    font-size: 24px;
-  }
+@media (orientation: landscape) and (min-width: 640px) {
+	header h1 {
+		font-size: 24px;
+	}
 
-  header h2 {
-    font-size: 24px;
-  }
+	header h2 {
+		font-size: 24px;
+	}
 
-  header button {
-    font-size: 16px;
-    line-height: 40px
-  }
+	header button {
+		font-size: 16px;
+		line-height: 40px;
+	}
 }
 
-@media (orientation:landscape) and (min-width: 1024px) {
-  header div.welcome {
-    left: 3%;
-  }
+@media (orientation: landscape) and (min-width: 1024px) {
+	header div.welcome {
+		left: 3%;
+	}
 
-  header p {
-    font-size: 56px;
-  }
+	header p {
+		font-size: 56px;
+	}
 
-  header h1 {
-    margin-top: 40px;
-    font-size: 34px;
-  }
+	header h1 {
+		margin-top: 40px;
+		font-size: 34px;
+	}
 
-  header h2 {
-    font-size: 34px;
-  }
+	header h2 {
+		font-size: 34px;
+	}
 
-  header button {
-    margin-top: 80px;
-    font-size: 28px;
-    line-height: 70px
-  }
+	header button {
+		margin-top: 80px;
+		font-size: 28px;
+		line-height: 70px;
+	}
 
-  header img {
-    bottom: -50%;
-    right: -25%;
-    height: 180%;
-  }
+	header img {
+		bottom: -50%;
+		right: -25%;
+		height: 180%;
+	}
 }
 
-@media (orientation:landscape) and (min-width: 1280px) {
-  header div.welcome {
-    text-align: left;
-    left: 6%;
-  }
+@media (orientation: landscape) and (min-width: 1280px) {
+	header div.welcome {
+		text-align: left;
+		left: 6%;
+	}
 
-  header p {
-    font-size: 100px;
-  }
+	header p {
+		font-size: 100px;
+	}
 
-  header h1 {
-    font-size: 50px;
-  }
+	header h1 {
+		font-size: 50px;
+	}
 
-  header h2 {
-    font-size: 50px;
-  }
+	header h2 {
+		font-size: 50px;
+	}
 
-  header button {
-    margin-top: 100px;
-    font-size: 30px;
-    line-height: 80px;
-    padding: 0 40px;
-    border-width: 2px;
-  }
+	header button {
+		margin-top: 100px;
+		font-size: 30px;
+		line-height: 80px;
+		padding: 0 40px;
+		border-width: 2px;
+	}
 
-  header img {
-    right: -15%;
-  }
+	header img {
+		right: -15%;
+	}
 }
 
-@media (orientation:landscape) and (min-width: 1600px) {
+@media (orientation: landscape) and (min-width: 1600px) {
+	header div.welcome {
+		left: 8%;
+	}
 
-  header div.welcome {
-    left: 8%;
-  }
+	header p {
+		font-size: 120px;
+	}
 
-  header p {
-    font-size: 120px;
-  }
+	header h1 {
+		font-size: 60px;
+	}
 
-  header h1 {
-    font-size: 60px;
-  }
+	header h2 {
+		font-size: 60px;
+	}
 
-  header h2 {
-    font-size: 60px;
-  }
+	header button {
+		line-height: 90px;
+	}
 
-  header button {
-    line-height: 90px;
-  }
-
-  header img {
-    right: -10%;
-  }
+	header img {
+		right: -10%;
+	}
 }
 
 @media (min-width: 1024px) {
-  header button {
-    cursor: pointer;
-    transition: .3s;
-  }
+	header button {
+		cursor: pointer;
+		transition: 0.3s;
+	}
 
-  header button:hover {
-    background-color: white;
-    color: #111;
-  }
+	header button:hover {
+		background-color: white;
+		color: #111;
+	}
 }
 
 /*Sekcja 1 nasze cechy*/
 .features {
-  max-width: 1600px;
-  margin: 50px auto 0;
-  padding: 5%;
-  text-align: center;
+	max-width: 1600px;
+	margin: 50px auto 0;
+	padding: 5%;
+	text-align: center;
 }
 
 .features h1 {
-  font-family: 'Saira Condensed', sans-serif;
-  font-size: 26px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
+	font-family: "Saira Condensed", sans-serif;
+	font-size: 26px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
 }
 
 .features h2 {
-  font-family: 'Saira Condensed', sans-serif;
-  font-size: 22px;
-  text-transform: uppercase;
+	font-family: "Saira Condensed", sans-serif;
+	font-size: 22px;
+	text-transform: uppercase;
 }
 
 .features p {
-  font-family: 'Saira', sans-serif;
-  font-size: 12px;
-  font-weight: 300;
-  margin: 20px 0;
+	font-family: "Saira", sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	margin: 20px 0;
 }
 
 .features img {
-  margin: 10px 0;
-  width: 95%;
-  max-width: 375px;
+	margin: 10px 0;
+	width: 95%;
+	max-width: 375px;
 }
 
-@media (min-width:360px) {
-  .features h1 {
-    font-size: 28px;
-  }
+@media (min-width: 360px) {
+	.features h1 {
+		font-size: 28px;
+	}
 
-  .features h2 {
-    font-size: 24px;
-  }
+	.features h2 {
+		font-size: 24px;
+	}
 
-  .features p {
-    font-size: 16px;
-  }
+	.features p {
+		font-size: 16px;
+	}
 }
 
-@media (min-width:768px) {
-  .features h1 {
-    font-size: 36px;
-  }
+@media (min-width: 768px) {
+	.features h1 {
+		font-size: 36px;
+	}
 
-  .features h2 {
-    font-size: 28px;
-  }
+	.features h2 {
+		font-size: 28px;
+	}
 
-  .features p {
-    font-size: 18px;
-  }
+	.features p {
+		font-size: 18px;
+	}
 }
 
-@media (min-width:1024px) {
-  .features {
-    padding: 5% 2%;
-  }
+@media (min-width: 1024px) {
+	.features {
+		padding: 5% 2%;
+	}
 
-  .feature {
-    float: left;
-    width: 33%;
-    padding: 20px;
-  }
+	.feature {
+		float: left;
+		width: 33%;
+		padding: 20px;
+	}
 
-  .features h1 {
-    font-size: 36px;
-  }
+	.features h1 {
+		font-size: 36px;
+	}
 
-  .features h2 {
-    font-size: 22px;
-  }
+	.features h2 {
+		font-size: 22px;
+	}
 
-  .features p {
-    font-size: 16px;
-    line-height: 120%;
-    padding: 0 10px;
-  }
+	.features p {
+		font-size: 16px;
+		line-height: 120%;
+		padding: 0 10px;
+	}
 }
 
-@media (min-width:1600px) {
+@media (min-width: 1600px) {
+	.feature {
+		padding: 20px 40px;
+	}
 
-  .feature {
-    padding: 20px 40px;
-  }
+	.features h1 {
+		font-size: 60px;
+	}
 
-  .features h1 {
-    font-size: 60px;
-  }
+	.features h2 {
+		font-size: 32px;
+	}
 
-  .features h2 {
-    font-size: 32px;
-  }
-
-  .features p {
-    font-size: 21px;
-    line-height: 140%;
-    padding: 0 10px;
-  }
+	.features p {
+		font-size: 21px;
+		line-height: 140%;
+		padding: 0 10px;
+	}
 }
 
 /*Sekcja 2 portfolio*/
 .portfolio {
-  background-color: #1e1e1e;
-  padding: 10px 0 6px;
+	background-color: #1e1e1e;
+	padding: 10px 0 6px;
 }
 
 .portfolio h1 {
-  font-family: 'Saira Condensed', sans-serif;
-  font-size: 28px;
-  text-transform: uppercase;
-  color: white;
-  text-align: center;
-  padding: 10px 20px;
-  margin-bottom: 15px
+	font-family: "Saira Condensed", sans-serif;
+	font-size: 28px;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	padding: 10px 20px;
+	margin-bottom: 15px;
 }
 
 .portfolio .web img {
-  width: 100%;
+	width: 100%;
 }
 
 .portfolio .about {
-  color: white;
-  font-family: 'Saira', sans-serif;
-  font-weight: normal;
-  padding: 10px 20px 20px 0px;
-  text-align: left;
+	color: white;
+	font-family: "Saira", sans-serif;
+	font-weight: normal;
+	padding: 10px 20px 20px 0px;
+	text-align: left;
 }
 
 .portfolio .about h2 {
-  font-size: 18px;
-  border-bottom: 2px solid white;
-  margin-bottom: 12px;
-  padding-bottom: 6px;
-  text-indent: 20px;
+	font-size: 18px;
+	border-bottom: 2px solid white;
+	margin-bottom: 12px;
+	padding-bottom: 6px;
+	text-indent: 20px;
 }
 
 .portfolio .about p {
-  font-size: 12px;
-  padding-left: 20px;
+	font-size: 12px;
+	padding-left: 20px;
 }
 
 .portfolio .project {
-  max-width: 1440px;
-  margin: 0 auto 20px;
+	max-width: 1440px;
+	margin: 0 auto 20px;
 }
 
 .portfolio .project:nth-of-type(odd) {
-  background-color: #ff4f2c;
+	background-color: #ff4f2c;
 }
 
 .portfolio .project:nth-of-type(even) {
-  background-color: #29a6dc;
+	background-color: #29a6dc;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
+	.portfolio h1 {
+		font-size: 40px;
+	}
 
-  .portfolio h1 {
-    font-size: 40px;
-  }
+	.portfolio .about h2 {
+		font-size: 28px;
+		text-indent: 40px;
+	}
 
-  .portfolio .about h2 {
-    font-size: 28px;
-    text-indent: 40px
-  }
+	.portfolio .about p {
+		font-size: 18px;
+		padding-left: 40px;
+	}
 
-  .portfolio .about p {
-    font-size: 18px;
-    padding-left: 40px
-  }
-
-  .portfolio .project {
-    margin-bottom: 40px;
-  }
+	.portfolio .project {
+		margin-bottom: 40px;
+	}
 }
 
 @media (orientation: landscape) {
+	.web,
+	.about {
+		width: 50%;
+		float: left;
+	}
 
-  .web,
-  .about {
-    width: 50%;
-    float: left;
-  }
+	.web img {
+		display: block;
+	}
 
-  .web img {
-    display: block;
-  }
+	.portfolio .project:nth-of-type(even) .web {
+		float: right;
+	}
 
-  .portfolio .project:nth-of-type(even) .web {
-    float: right;
-  }
+	.portfolio .project:nth-of-type(even) .about {
+		padding-right: 0;
+	}
 
-  .portfolio .project:nth-of-type(even) .about {
-    padding-right: 0;
-  }
+	.portfolio .project:nth-of-type(even) .about h2 {
+		text-indent: 0;
+		margin-left: 40px;
+	}
 
-  .portfolio .project:nth-of-type(even) .about h2 {
-    text-indent: 0;
-    margin-left: 40px;
-  }
-
-  .portfolio .project:nth-of-type(even) .about p {
-    padding-right: 20px;
-  }
+	.portfolio .project:nth-of-type(even) .about p {
+		padding-right: 20px;
+	}
 }
 
-@media (orientation: landscape) and (min-width:1024px) {
+@media (orientation: landscape) and (min-width: 1024px) {
+	.portfolio .about h2 {
+		padding-bottom: 20px;
+	}
 
-  .portfolio .about h2 {
-    padding-bottom: 20px;
-  }
-
-  .portfolio .about p {
-    padding-top: 20px;
-  }
+	.portfolio .about p {
+		padding-top: 20px;
+	}
 }
 
-@media (orientation: landscape) and (min-width:1400px) {
+@media (orientation: landscape) and (min-width: 1400px) {
+	.portfolio h1 {
+		font-size: 60px;
+		padding: 30px 0;
+	}
 
-  .portfolio h1 {
-    font-size: 60px;
-    padding: 30px 0;
-  }
+	.portfolio .about h2 {
+		padding-top: 50px;
+		font-size: 28px;
+		text-indent: 40px;
+		margin-bottom: 50px;
+	}
 
-  .portfolio .about h2 {
-    padding-top: 50px;
-    font-size: 28px;
-    text-indent: 40px;
-    margin-bottom: 50px;
-  }
+	.portfolio .about p {
+		font-size: 18px;
+		padding-left: 40px;
+		line-height: 180%;
+	}
 
-  .portfolio .about p {
-    font-size: 18px;
-    padding-left: 40px;
-    line-height: 180%;
-  }
-
-  .portfolio .project {
-    margin-bottom: 40px;
-  }
+	.portfolio .project {
+		margin-bottom: 40px;
+	}
 }
 
 /*Sekcja 3 motto*/
 
 .slogan {
-  text-align: center;
-  background-image: url(../images/motto.jpg);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  background-attachment: fixed;
+	text-align: center;
+	background-image: url(../images/motto.jpg);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	background-attachment: fixed;
 }
 
 .slogan .bg {
-  background-color: rgba(0, 63, 114, 0.5);
-  padding: 30px 10px;
+	background-color: rgba(0, 63, 114, 0.5);
+	padding: 30px 10px;
 }
 
 .slogan h1 {
-  font-family: 'Saira Condensed', sans-serif;
-  font-size: 26px;
-  text-transform: uppercase;
-  margin-bottom: 25px;
+	font-family: "Saira Condensed", sans-serif;
+	font-size: 26px;
+	text-transform: uppercase;
+	margin-bottom: 25px;
 }
 
 .slogan p {
-  font-family: "Saira", sans-serif;
+	font-family: "Saira", sans-serif;
 }
 
 .slogan p.text {
-  font-size: 18px;
+	font-size: 18px;
 }
 
 .slogan p.author {
-  margin-top: 20px;
-  font-size: 12px;
+	margin-top: 20px;
+	font-size: 12px;
 }
 
 @media (orientation: portrait) and (min-width: 360px) {
+	.slogan h1 {
+		margin-bottom: 35px;
+	}
 
-  .slogan h1 {
-    margin-bottom: 35px;
-  }
+	.slogan p.author {
+		margin-top: 30px;
+	}
 
-  .slogan p.author {
-    margin-top: 30px;
-  }
-
-  .slogan p {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+	.slogan p {
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @media (orientation: landscape) {
-  .slogan p {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+	.slogan p {
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @media (min-width: 768px) {
+	.slogan .bg {
+		padding: 50px 10px;
+	}
 
-  .slogan .bg {
-    padding: 50px 10px;
-  }
+	.slogan h1 {
+		font-size: 48px;
+		margin-bottom: 35px;
+	}
 
-  .slogan h1 {
-    font-size: 48px;
-    margin-bottom: 35px;
-  }
+	.slogan p.text {
+		font-size: 26px;
+		width: 60%;
+		margin: 0 auto;
+	}
 
-  .slogan p.text {
-    font-size: 26px;
-    width: 60%;
-    margin: 0 auto;
-  }
-
-  .slogan p.author {
-    margin-top: 40px;
-    font-size: 18px;
-  }
+	.slogan p.author {
+		margin-top: 40px;
+		font-size: 18px;
+	}
 }
 
-
 @media (min-width: 1024px) {
+	.slogan .bg {
+		padding: 80px 10px;
+	}
 
-  .slogan .bg {
-    padding: 80px 10px;
-  }
+	.slogan h1 {
+		font-size: 60px;
+		margin-bottom: 55px;
+	}
 
-  .slogan h1 {
-    font-size: 60px;
-    margin-bottom: 55px;
-  }
+	.slogan p.text {
+		font-size: 40px;
+		width: 50%;
+	}
 
-  .slogan p.text {
-    font-size: 40px;
-    width: 50%;
-  }
-
-  .slogan p.author {
-    font-size: 26px;
-  }
+	.slogan p.author {
+		font-size: 26px;
+	}
 }
 
 /*Sekcja 4 hobby*/
 .hobby {
-  max-width: 1920px;
-  margin: 0 auto;
+	max-width: 1920px;
+	margin: 0 auto;
 }
 
 .hobby h1 {
-  font-family: 'Saira Condensed', sans-serif;
-  padding: 20px;
-  text-align: center;
-  font-size: 36px;
-  text-transform: uppercase;
+	font-family: "Saira Condensed", sans-serif;
+	padding: 20px;
+	text-align: center;
+	font-size: 36px;
+	text-transform: uppercase;
 }
 
 .hobby .item {
-  height: 25vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+	height: 25vh;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .hobby .item:nth-of-type(1) {
-  background-image: url(../images/hobby1_1.jpg);
+	background-image: url(../images/hobby1_1.jpg);
 }
 
 .hobby .item:nth-of-type(2) {
-  background-image: url(../images/hobby2_2.jpg);
+	background-image: url(../images/hobby2_2.jpg);
 }
 
 .hobby .item:nth-of-type(3) {
-  background-image: url(../images/hobby3_3.jpg);
+	background-image: url(../images/hobby3_3.jpg);
 }
 
 .hobby .item:nth-of-type(4) {
-  background-image: url(../images/hobby4_4.jpg);
+	background-image: url(../images/hobby4_4.jpg);
 }
 
 .hobby .item p {
-  font-family: "Saira", sans-serif;
-  color: white;
-  text-align: center;
-  line-height: 25vh;
-  text-shadow: 0 0 4px black;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 20px;
+	font-family: "Saira", sans-serif;
+	color: white;
+	text-align: center;
+	line-height: 25vh;
+	text-shadow: 0 0 4px black;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: 20px;
 }
 
-@media (min-width:533px) {
-  .hobby .item {
-    float: left;
-    width: 50%;
-    height: 40vh;
-  }
+@media (min-width: 533px) {
+	.hobby .item {
+		float: left;
+		width: 50%;
+		height: 40vh;
+	}
 
-  .hobby .item p {
-    line-height: 40vh;
-  }
+	.hobby .item p {
+		line-height: 40vh;
+	}
 }
 
-@media (min-width:768px) {
-  .hobby h1 {
-    font-size: 48px;
-    margin-top: 40px;
-    margin-bottom: 35px;
-  }
+@media (min-width: 768px) {
+	.hobby h1 {
+		font-size: 48px;
+		margin-top: 40px;
+		margin-bottom: 35px;
+	}
 
-  .hobby .item p {
-    font-size: 30px;
-  }
+	.hobby .item p {
+		font-size: 30px;
+	}
 }
 
 @media (min-width: 1024px) {
-  .hobby .item p {
-    opacity: 0;
-    transition: 1s;
-    cursor: default;
-  }
+	.hobby .item p {
+		opacity: 0;
+		transition: 1s;
+		cursor: default;
+	}
 
-  .hobby .item:hover p {
-    opacity: 1;
-  }
+	.hobby .item:hover p {
+		opacity: 1;
+	}
 
-  .hobby .item {
-    background-size: 100%;
-    transition: 1s;
-  }
+	.hobby .item {
+		background-size: 100%;
+		transition: 1s;
+	}
 
-  .hobby .item:hover {
-    background-size: 130%;
-  }
+	.hobby .item:hover {
+		background-size: 130%;
+	}
 }
 
 @media (min-width: 1600px) {
+	.hobby h1 {
+		font-size: 60px;
+		margin-top: 50px;
+		margin-bottom: 45px;
+	}
 
-  .hobby h1 {
-    font-size: 60px;
-    margin-top: 50px;
-    margin-bottom: 45px;
-  }
-
-  .hobby .item p {
-    font-size: 40px;
-  }
+	.hobby .item p {
+		font-size: 40px;
+	}
 }
 
 /*Sekcja 5 contakt*/
 
 .contact {
-  background-color: #000;
-  padding: 30px 20px;
+	background-color: #000;
+	padding: 30px 20px;
+	height: 110vh;
 }
 
 .contact h1 {
-  font-family: 'Saira Condensed', sans-serif;
-  font-size: 26px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  color: white;
-  text-align: center;
-}
-
-.contact input,
-.contact button,
-.contact textarea {
-  width: 100%;
-  margin-bottom: 25px;
-  font-family: 'Saira', sans-serif;
-  font-size: 12px;
-  padding: 5px;
-}
-
-.contact .wrap {
-  padding-top: 20px;
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
-.contact input {
-  height: 36px;
-}
-
-.contact textarea {
-  height: 120px;
-}
-
-.contact button {
-  font-size: 14px;
-  line-height: 40px;
-  background-color: black;
-  color: white;
-  border: 2px solid white;
-  text-transform: uppercase;
+	font-family: "Saira Condensed", sans-serif;
+	font-size: 26px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	color: white;
+	text-align: center;
 }
 
 .contact .socials {
-  padding-top 30px;
-  font-size: 0;
+	padding-top: 100px;
+	font-size: 0;
+	text-align: center;
+	transform: skewY(-15deg);
 }
 
 .contact .social {
-  padding: 10px 0;
-  color: white;
-  font-family: 'Saira Condensed', sans-serif;
+	padding: 10px 0;
+	color: white;
+	font-family: "Saira Condensed", sans-serif;
+	width: 30%;
+	background-color: #3e3f46;
+	position: relative;
+	left: 40%;
+	transition: 0.5s;
 }
 
-.contact .social img {
-  float: left;
+.contact .social::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -72px;
+	width: 72px;
+	height: 100%;
+	background-color: #1c1d21;
+	filter: brightness(0.7);
+	transform-origin: right;
+	transform: skewY(45deg);
+	transition: 0.5s;
+}
+
+.contact .social:nth-child(1):hover::before {
+	background-color: rgba(24, 119, 242, 0.5);
+}
+
+.contact .social:nth-child(2):hover::before {
+	background-color: rgba(195, 42, 163, 0.5);
+}
+
+.contact .social:nth-child(3):hover::before {
+	background-color: rgba(37, 211, 102, 0.5);
+}
+
+.contact .social:nth-child(4):hover::before {
+	background-color: rgba(0, 127, 254, 0.5);
+}
+
+.contact .social::after {
+	content: "";
+	position: absolute;
+	top: -72px;
+	left: 0;
+	width: 100%;
+	height: 72px;
+	background-color: #1c1d21;
+	filter: brightness(0.7);
+	transform-origin: bottom;
+	transform: skewX(45deg);
+	transition: 0.5s;
+}
+
+.contact .social:nth-child(2)::after,
+.contact .social:nth-child(3)::after,
+.contact .social:nth-child(4)::after {
+	opacity: 0;
+}
+
+.contact .social:nth-child(4)::after {
+	box-shadow: -120px 120px 20px rgba(157, 147, 147, 0.404);
+}
+
+.contact .social:nth-child(1):hover::after {
+	background-color: rgba(24, 119, 242, 0.5);
+}
+
+.contact .social:nth-child(2):hover::after {
+	opacity: 1;
+	background-color: rgba(195, 42, 163, 0.5);
+}
+
+.contact .social:nth-child(3):hover::after {
+	opacity: 1;
+	background-color: rgba(37, 211, 102, 0.5);
+}
+
+.contact .social:nth-child(4):hover::after {
+	opacity: 1;
+	background-color: rgba(0, 127, 254, 0.5);
+}
+
+.contact .social:hover {
+	transform: translateX(-30%);
+}
+
+.contact .social:nth-child(1):hover {
+	background-color: #1877f2;
+	z-index: 1;
+}
+
+.contact .social:nth-child(2):hover {
+	background-color: #c32aa3;
+	z-index: 1;
+}
+
+.contact .social:nth-child(3):hover {
+	background-color: #25d366;
+	z-index: 1;
+}
+
+.contact .social:nth-child(4):hover {
+	background-color: #007ffe84;
+	z-index: 1;
 }
 
 .contact .social span {
-  line-height: 72px;
-  padding-left: 20px;
-  padding-right: 10px;
-  float: left;
-  font-size: 14px;
+	line-height: 72px;
+	padding-left: 20px;
+	padding-right: 10px;
+	font-size: 14px;
+	display: block;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.contact .social i {
+	position: absolute;
+	top: 0;
+	left: -72px;
+	width: 72px;
+	height: 100%;
+	transform-origin: right;
+	transform: skewY(45deg);
+	transition: 0.5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.5;
+	font-size: 1.25em;
+}
+
+.contact .social:hover i {
+	opacity: 1;
 }
 
 .contact .social a {
-  line-height: 72px;
-  text-decoration: none;
-  color: white;
-  padding-left: 20px;
-  float: left;
-  font-size: 14px;
+	line-height: 72px;
+	text-decoration: none;
+	color: white;
+	padding-left: 20px;
+	font-size: 14px;
+	text-transform: uppercase;
 }
 
-@media (min-width:533px) {
-  .contact .social {
-    display: inline-block;
-    width: 50%;
-  }
-}
+@media (min-width: 640px) {
+	.contact .social span {
+		font-size: 20px;
+	}
 
-@media (min-width:640px) {
-
-  .contact .social span {
-    font-size: 20px;
-  }
-
-  .contact .social a {
-    font-size: 20px;
-  }
+	.contact .social a {
+		font-size: 20px;
+	}
 }
 
 @media (min-width: 1024px) {
+	.contact h1 {
+		font-size: 60px;
+		padding: 30px 0;
+	}
 
-  .contact h1 {
-    font-size: 60px;
-    padding: 30px 0;
-  }
+	.contact .socials {
+		display: block;
+		width: 100%;
+		margin: 0 20px;
+	}
 
-  .contact form,
-  .contact .socials {
-    float: left;
-    width: 50%;
-    padding: 0 20px 0 0;
-  }
+	.contact .socials span {
+		font-size: 20px;
+		padding-left: 20px;
+	}
 
-  .contact .social {
-    display: block;
-    width: 100%;
-    margin: 0 20px;
-  }
-
-  .contact input,
-  .contact button,
-  .contact textarea {
-    margin-bottom: 35px;
-  }
-
-  .contact input {
-    height: 46px;
-    font-size: 24px;
-  }
-
-  .contact textarea {
-    font-size: 24px;
-  }
-
-  .contact button {
-    font-size: 20px;
-    line-height: 50px;
-    transition: .3s;
-  }
-
-  .contact button:hover {
-    color: black;
-    background-color: #fff;
-    cursor: pointer;
-  }
-
-  .contact .social span {
-    font-size: 20px;
-    padding-left: 20px;
-    ;
-  }
-
-  .contact .social a {
-    font-size: 20px;
-  }
-}
-
-.contact .social img {
-  padding-left: 15%;
+	.contact .socials a {
+		font-size: 20px;
+	}
 }
 
 footer {
-  background-color: #28a6dc;
-  color: white;
-  font-family: Saira, sans-serif;
-  text-align: center;
-  padding: 20px;
-  font-size: 20px;
+	background-color: #28a6dc;
+	color: white;
+	font-family: Saira, sans-serif;
+	text-align: center;
+	padding: 20px;
+	font-size: 20px;
 }
