@@ -7,16 +7,10 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link
 			href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&family=Saira:wght@300;400&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="https://kit.fontawesome.com/9f78667786.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="../css/style.css" />
 	</head>
 
@@ -63,16 +57,23 @@
 		<section class="portfolio">
 			<h1>Projekty, z których jestem dumny</h1>
 			<div class="project clearfix">
-				<div class="web"><img src="images/portfolio1.jpg" alt="przykład portfolio interia" /></div>
+				<div class="web"><img class="slider" src="images/portfolio1.jpg" alt="przykład portfolio interia" /></div>
 				<div class="about">
-					<h2>Nazwa projektu</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aperiam rerum error fuga iusto ullam,
-						similique delectus adipisci, quos ratione itaque sapiente, ipsam eius quas. Rerum enim ipsam a officiis.
+					<h2 class="slider">Moja strona-wizytówka</h2>
+					<p class="slider">
+						To dokładnie ta strona na której obecnie jesteś. Stronę napisałem pod koniec nauki z pierwszego kursu o HTML
+						i CSS stworzonego przez Samuraja Programowania. Potem jak nauczyłem się więcej o HTMLu i CSSie oraz poznałem
+						podstawy JS postanowiłem ją rozbudować i poprawić. Obecnie strona jest cały czas ulepszana.
 					</p>
 				</div>
 			</div>
-			<div class="project clearfix">
+			<div class="dots">
+				<span id="one" class="active"></span>
+				<span id="two"></span>
+				<span id="three"></span>
+				<span id="four"></span>
+			</div>
+			<!-- <div class="project clearfix">
 				<div class="web"><img src="images/portfolio2.jpg" alt="przykład portfolio na:Temat" /></div>
 				<div class="about">
 					<h2>Nazwa projektu</h2>
@@ -81,8 +82,8 @@
 						similique delectus adipisci, quos ratione itaque sapiente, ipsam eius quas. Rerum enim ipsam a officiis.
 					</p>
 				</div>
-			</div>
-			<div class="project clearfix">
+			</div> -->
+			<!-- <div class="project clearfix">
 				<div class="web"><img src="images/portfolio3.jpg" alt="przykład portfolio allegro" /></div>
 				<div class="about">
 					<h2>Nazwa projektu</h2>
@@ -91,8 +92,8 @@
 						similique delectus adipisci, quos ratione itaque sapiente, ipsam eius quas. Rerum enim ipsam a officiis.
 					</p>
 				</div>
-			</div>
-			<div class="project clearfix">
+			</div> -->
+			<!-- <div class="project clearfix">
 				<div class="web"><img src="images/portfolio4.jpg" alt="przykład portfolio onet" /></div>
 				<div class="about">
 					<h2>Nazwa projektu</h2>
@@ -101,13 +102,13 @@
 						similique delectus adipisci, quos ratione itaque sapiente, ipsam eius quas. Rerum enim ipsam a officiis.
 					</p>
 				</div>
-			</div>
+			</div> -->
 		</section>
 		<section class="slogan">
 			<div class="bg">
 				<h1>Moje życiowe motto</h1>
-				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex fugiat sed esse nisi.</p>
-				<p class="author">Jan Nowak</p>
+				<p class="text"></p>
+				<p class="author"></p>
 			</div>
 		</section>
 		<section class="hobby clearfix">
@@ -172,5 +173,6 @@
 			</div>
 		</section>
 		<footer>&copy; Damian Goszkowski</footer>
+		<script src="main.js"></script>
 	</body>
 </html>
