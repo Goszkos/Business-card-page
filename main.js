@@ -10,17 +10,17 @@ const slideList = [
 	{
 		img: "images/portfolio2.jpg",
 		h2: "Przykładowa strona 1",
-		p: "Niestety,ale obecnie nie mam więcej stron którymi mógłbym się tutaj pochowalić. Skupiam się na dalszej nauce JS i podstaw Reacta. Dodaje kolejne slajdy dlatego, żeby baner był fajniejszy i żeby można było trochę sobie poklikać",
+		p: "Niestety,ale obecnie nie mam więcej stron którymi mógłbym się tutaj pochowalić. Skupiam się na dalszej nauce JS i podstaw Reacta. Dodaje kolejne slajdy dlatego, żeby baner był fajniejszy i żeby można było trochę sobie poklikać i posprawdzać jak działa",
 	},
 	{
 		img: "images/portfolio3.jpg",
 		h2: "Przykładowa strona 2",
-		p: "Niestety,ale obecnie nie mam więcej stron którymi mógłbym się tutaj pochowalić. Skupiam się na dalszej nauce JS i podstaw Reacta. Dodaje kolejne slajdy dlatego, żeby baner był fajniejszy i żeby można było trochę sobie poklikać",
+		p: "Niestety,ale obecnie nie mam więcej stron którymi mógłbym się tutaj pochowalić. Skupiam się na dalszej nauce JS i podstaw Reacta. Dodaje kolejne slajdy dlatego, żeby baner był fajniejszy i żeby można było trochę sobie poklikać i posprawdzać jak działa",
 	},
 	{
 		img: "images/portfolio4.jpg",
 		h2: "Przykładowa strona 3",
-		p: "Niestety,ale obecnie nie mam więcej stron którymi mógłbym się tutaj pochowalić. Skupiam się na dalszej nauce JS i podstaw Reacta. Dodaje kolejne slajdy dlatego, żeby baner był fajniejszy i żeby można było trochę sobie poklikać",
+		p: "Niestety,ale obecnie nie mam więcej stron którymi mógłbym się tutaj pochowalić. Skupiam się na dalszej nauce JS i podstaw Reacta. Dodaje kolejne slajdy dlatego, żeby baner był fajniejszy i żeby można było trochę sobie poklikać i posprawdzać jak działa",
 	},
 ];
 

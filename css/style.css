@@ -259,117 +259,148 @@ header button {
 	}
 }
 
-/*Sekcja 1 nasze cechy*/
-.features {
-	max-width: 1600px;
-	margin: 50px auto 0;
-	padding: 5%;
+/*Sekcja 1 moja nauka*/
+.languages {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 40px;
+	font-family: "Saira Condensed", sans-serif;
+	background-color: black;
+}
+
+.languages h1 {
+	position: relative;
+	display: flex;
+	font-family: "Saira Condensed", sans-serif;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: white;
+	display: block;
 	text-align: center;
+	width: 100%;
+	margin-top: 10vh;
+	letter-spacing: 2px;
+	margin-bottom: -50px;
 }
 
-.features h1 {
-	font-family: "Saira Condensed", sans-serif;
-	font-size: 26px;
-	text-transform: uppercase;
-	margin-bottom: 15px;
+.languages .language {
+	position: relative;
+	width: 220px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.features h2 {
-	font-family: "Saira Condensed", sans-serif;
-	font-size: 22px;
-	text-transform: uppercase;
+.languages .language .percent {
+	position: relative;
+	width: 150px;
+	height: 150px;
 }
 
-.features p {
-	font-family: "Saira", sans-serif;
-	font-size: 12px;
+.languages .language .percent svg {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	transform: rotate(270deg);
+}
+.languages .language .percent svg circle {
+	width: 100%;
+	height: 100%;
+	fill: transparent;
+	stroke-width: 2;
+	stroke: #3d3a3aaf;
+	transform: translate(5px, 5px);
+}
+
+.languages .language .percent svg circle:nth-child(2) {
+	stroke: var(--clr);
+	stroke-dasharray: 440;
+	stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+	opacity: 0;
+	animation: fadeIn 1s linear forwards;
+	animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.dot {
+	position: absolute;
+	inset: 5px;
+	z-index: 10;
+	transform: rotate(calc(3.6deg * var(--num)));
+	animation: animateDot 2s linear forwards;
+}
+
+@keyframes animateDot {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(calc(3.6deg * var(--num)));
+	}
+}
+
+.dot::before {
+	content: "";
+	position: absolute;
+	top: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: var(--clr);
+	box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
+}
+
+.number {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	opacity: 0;
+	animation: fadeIn 1s linear forwards;
+	animation-delay: 2.5s;
+}
+
+.number h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: 700;
+	font-size: 2.5em;
+}
+
+.number h2 span {
 	font-weight: 300;
-	margin: 20px 0;
+	color: white;
+	font-size: 0.5em;
 }
 
-.features img {
-	margin: 10px 0;
-	width: 95%;
-	max-width: 375px;
-}
-
-@media (min-width: 360px) {
-	.features h1 {
-		font-size: 28px;
-	}
-
-	.features h2 {
-		font-size: 24px;
-	}
-
-	.features p {
-		font-size: 16px;
-	}
-}
-
-@media (min-width: 768px) {
-	.features h1 {
-		font-size: 36px;
-	}
-
-	.features h2 {
-		font-size: 28px;
-	}
-
-	.features p {
-		font-size: 18px;
-	}
-}
-
-@media (min-width: 1024px) {
-	.features {
-		padding: 5% 2%;
-	}
-
-	.feature {
-		float: left;
-		width: 33%;
-		padding: 20px;
-	}
-
-	.features h1 {
-		font-size: 36px;
-	}
-
-	.features h2 {
-		font-size: 22px;
-	}
-
-	.features p {
-		font-size: 16px;
-		line-height: 120%;
-		padding: 0 10px;
-	}
-}
-
-@media (min-width: 1600px) {
-	.feature {
-		padding: 20px 40px;
-	}
-
-	.features h1 {
-		font-size: 60px;
-	}
-
-	.features h2 {
-		font-size: 32px;
-	}
-
-	.features p {
-		font-size: 21px;
-		line-height: 140%;
-		padding: 0 10px;
-	}
+.number p {
+	font-weight: 300;
+	font-size: 0.75em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.75);
 }
 
 /*Sekcja 2 portfolio*/
 .portfolio {
-	background-color: #1e1e1e;
+	background-color: white;
 	padding: 10px 0 6px;
 	width: 100%;
 	position: relative;
@@ -380,11 +411,10 @@ header button {
 	font-family: "Saira Condensed", sans-serif;
 	font-size: 28px;
 	text-transform: uppercase;
-	color: white;
+	color: black;
 	text-align: center;
 	padding: 10px 20px;
 	margin-bottom: 15px;
-	text-shadow: 0 0 6px black;
 }
 .portfolio .dots {
 	position: absolute;
@@ -399,16 +429,16 @@ header button {
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
-	box-shadow: 0 0 0 5px white;
+	box-shadow: 0 0 0 5px black;
 	cursor: pointer;
 }
 
 .portfolio .dots span:nth-of-type(even).active {
-	box-shadow: 0 0 0 5px white, 0 0 3px 10px #28a6dc;
+	box-shadow: 0 0 0 5px black, 0 0 3px 10px #28a6dc;
 }
 
 .portfolio .dots span:nth-of-type(odd).active {
-	box-shadow: 0 0 0 5px white, 0 0 3px 10px #ff4f2c;
+	box-shadow: 0 0 0 5px black, 0 0 3px 10px #ff4f2c;
 }
 
 .portfolio .web img {
@@ -416,7 +446,7 @@ header button {
 }
 
 .portfolio .about {
-	color: white;
+	color: black;
 	font-family: "Saira", sans-serif;
 	font-weight: normal;
 	padding: 10px 20px 20px 0px;
@@ -425,7 +455,7 @@ header button {
 
 .portfolio .about h2 {
 	font-size: 18px;
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid black;
 	margin-bottom: 12px;
 	padding-bottom: 6px;
 	text-indent: 20px;
