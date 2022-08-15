@@ -1,3 +1,11 @@
+// Sekcja welcome
+let btnScroll = document.querySelector("button");
+let portf = document.querySelector(".portfolio");
+
+btnScroll.addEventListener("click", function () {
+	portf.scrollIntoView(true);
+});
+
 // Sekcja portfolio
 
 // Slider budowa
@@ -103,6 +111,7 @@ const mouseClickChangeSlide = () => {
 };
 
 mouseClickChangeSlide();
+
 // Sekcja slogan
 
 const pText = document.querySelector(".text");
